@@ -1,0 +1,131 @@
+@import "variables";
+@import "reset";
+@import "header";
+@import "footer";
+@import "general";
+
+.contacto {
+  margin-top: 6rem;
+  display: grid;
+  max-width: 100%;
+  //gap: 11.6rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  &__titulo {
+    font-size: 5rem;
+    font-weight: 800;
+    color: $color-negro;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__formulario {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: min(10%, 6.5rem);
+    margin-right: 11.6rem;
+    display: flex;
+    flex-direction: column;
+
+
+    .label01,
+    .label02,
+    .label03 {
+      margin-bottom: 6px;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: $color-gris-medio;
+      text-transform: uppercase;
+    }
+
+    .label01 {
+      margin-top: 3.6rem;
+    }
+
+    .label02 {
+      margin-top: 2.9rem;
+    }
+
+    .label03 {
+      margin-top: 2rem;
+    }
+
+    .nombre,
+    .correo {
+      width: min(100%, 52.4rem);
+      height: 5.5rem;
+      padding: 1.8rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $color-negro;
+      border: 1px solid $color-gris-medio;
+      border-radius: 4px;
+    }
+
+
+  }
+
+  .mensaje {
+    width: min(100%, 52.4rem);
+    height: min(100%, 26.9rem);
+    resize: none;
+    padding: 1.8rem;
+    font-family: 'Sora';
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-negro ;
+    border: 1px solid $color-gris-medio;
+    border-radius: 4px;
+  }
+
+  .btn {
+    margin-top: 2rem;
+    align-self: flex-end;
+    width: 20rem;
+    height: 5.5rem;
+    padding: 1.6rem 7.2rem;
+    border: 1px solid $color-negro;
+    border-radius: 4px;
+    font-family: 'Sora', sans-serif;
+    color: $color-blanco;
+    background-color: $color-negro;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__fotobotas {
+    width: 100%;
+    //height: auto;
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+}
+
+.direcciones {
+  margin-top: 12.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  .direccion {
+    font-size: 1.6rem;
+    color: $color-negro;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .icono-direccion {
+    font-size: 2.9rem;
+    margin-right: 1.7rem;
+    display: flex;
+
+  }
+
+  .map {
+    padding-left: 4px;
+    flex-basis: 2.9rem; //el icono mapa es más angosto.
+  }
+}

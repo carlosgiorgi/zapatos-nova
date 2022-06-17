@@ -1,0 +1,36 @@
+//-----HEADER----
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//-----NAV----
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;
+    list-style: none;
+    gap: 3.7rem;
+
+    &--link:link,
+    &--link:visited,
+    &--link:active {
+      //display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: $color-negro;
+    }
+  }
+
+  .nav__cta {
+    padding: 1rem 1.4rem;
+    background-color: $color-negro;
+    color: $color-blanco;
+    border-radius: 4px;
+  }
+}

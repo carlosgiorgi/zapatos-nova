@@ -1,0 +1,25 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Sora', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: $color-blanco;
+}
+
+h4,
+h3,
+h2 {
+  font-weight: 400;
+
+}

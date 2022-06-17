@@ -1,0 +1,10 @@
+@import "variables";
+
+.contenedor {
+  max-width: $max-width;
+  margin: 5rem auto;
+}
+
+.fa-black {
+  color: $color-negro;
+}

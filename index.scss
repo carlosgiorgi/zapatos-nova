@@ -1,0 +1,179 @@
+@import "variables";
+@import "reset";
+@import "header";
+@import "footer";
+@import "general";
+
+
+//---HERO---
+.hero {
+  width: 100%;
+  margin-top: 6rem;
+  position: relative;
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__fondo-title {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 2rem 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--title {
+      text-transform: uppercase;
+      font-size: clamp(3rem, 5.5vw, 7.2rem);
+      font-weight: 300;
+      color: $color-blanco;
+      letter-spacing: -1.8px;
+    }
+  }
+
+
+}
+
+//---MAIN----
+
+.main {
+  margin-top: 10rem;
+  width: 100%;
+
+  &__descrip {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+    gap: 13rem;
+    color: $color-negro;
+
+    &--titulo {
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 3.8rem;
+    }
+
+    &--text {
+      font-size: $default-font-size;
+      font-weight: 600;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__fotos {
+    width: 100%;
+    margin-top: 9.7rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+
+    .fotobota {
+
+      width: 100%;
+    }
+
+    .foto1 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .foto2 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .foto3 {
+      grid-column: 3/5;
+      grid-row: 1/3;
+    }
+
+    .foto4 {
+      grid-column: 1/3;
+      grid-row: 2/5;
+      vertical-align: bottom;
+
+    }
+
+    .foto5 {
+      grid-column: 3;
+      grid-row: 3;
+    }
+
+    .foto6 {
+      grid-column: 4;
+      grid-row: 3;
+    }
+  }
+}
+
+//-----CLIENTES-TESTIMONIOS------
+
+.clientes {
+  margin-top: 19rem;
+  width: 100%;
+
+  &__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--titulo {
+      font-size: 3rem;
+    }
+  }
+
+
+
+  &__testimonios {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+    margin-top: 5rem;
+
+
+    &--cliente {
+      background-color: $color-negro;
+      color: $color-blanco;
+      border-radius: 8px;
+      font-size: $default-font-size;
+      padding: 2.5rem 3rem 3.5rem 3.5rem;
+    }
+
+    .quote {
+      width: 2.8rem;
+      height: 2.9rem;
+      //color: $color-gris-oscuro;
+    }
+
+    .testimonio {
+      margin-top: 1.7rem;
+    }
+
+    .cliente {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 2.6rem;
+      gap: 3.2rem;
+
+      &__foto {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+      }
+
+      &__ciudad {
+        font-size: 1.1rem;
+        color: $color-gris-medio;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+//-----FOOTER-----
