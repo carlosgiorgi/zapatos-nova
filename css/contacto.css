@@ -5,13 +5,14 @@
 }
 
 html {
-  font-family: "Sora", sans-serif;
+  /* 10px/16px = 0.625 = 62.5% */
+  /* Seteamos el font-size del browser en 62.5% para tener 1rem = 10px */
   font-size: 62.5%;
+  font-family: "Sora", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Sora", sans-serif;
   background-color: #fff;
 }
 
@@ -107,47 +108,51 @@ header {
 .contacto {
   margin-top: 6rem;
   display: grid;
-  max-width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  width: 100%;
+  grid-template-columns: 41% 50%;
+  gap: 9%;
+  grid-template-rows: auto;
 }
-.contacto__titulo {
+.contacto__datos {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+}
+.contacto__datos--titulo {
   font-size: 5rem;
   font-weight: 800;
   color: #000;
-  grid-column: 1;
-  grid-row: 1;
 }
-.contacto__formulario {
+.contacto__datos--formulario {
   grid-column: 1;
   grid-row: 1;
-  margin-top: min(10%, 6.5rem);
-  margin-right: 11.6rem;
+  width: 100%;
+  height: 80%;
+  margin-top: 5.9rem;
   display: flex;
   flex-direction: column;
+  /*.label01 {
+    margin-top: 3.6rem;
+  }*/
 }
-.contacto__formulario .label01,
-.contacto__formulario .label02,
-.contacto__formulario .label03 {
+.contacto__datos--formulario .label01,
+.contacto__datos--formulario .label02,
+.contacto__datos--formulario .label03 {
   margin-bottom: 6px;
   font-size: 1.3rem;
   font-weight: 400;
   color: #999;
   text-transform: uppercase;
 }
-.contacto__formulario .label01 {
-  margin-top: 3.6rem;
-}
-.contacto__formulario .label02 {
+.contacto__datos--formulario .label02 {
   margin-top: 2.9rem;
 }
-.contacto__formulario .label03 {
+.contacto__datos--formulario .label03 {
   margin-top: 2rem;
 }
-.contacto__formulario .nombre,
-.contacto__formulario .correo {
-  width: min(100%, 52.4rem);
-  height: 5.5rem;
+.contacto__datos--formulario .nombre,
+.contacto__datos--formulario .correo {
   padding: 1.8rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -155,8 +160,7 @@ header {
   border: 1px solid #999;
   border-radius: 4px;
 }
-.contacto .mensaje {
-  width: min(100%, 52.4rem);
+.contacto__datos--formulario .mensaje {
   height: min(100%, 26.9rem);
   resize: none;
   padding: 1.8rem;
@@ -167,7 +171,7 @@ header {
   border: 1px solid #999;
   border-radius: 4px;
 }
-.contacto .btn {
+.contacto__datos--formulario .btn {
   margin-top: 2rem;
   align-self: flex-end;
   width: 20rem;

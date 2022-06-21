@@ -5,13 +5,14 @@
 }
 
 html {
-  font-family: "Sora", sans-serif;
+  /* 10px/16px = 0.625 = 62.5% */
+  /* Seteamos el font-size del browser en 62.5% para tener 1rem = 10px */
   font-size: 62.5%;
+  font-family: "Sora", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Sora", sans-serif;
   background-color: #fff;
 }
 

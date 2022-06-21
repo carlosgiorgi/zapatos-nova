@@ -7,92 +7,109 @@
 .contacto {
   margin-top: 6rem;
   display: grid;
-  max-width: 100%;
+  width: 100%;
   //gap: 11.6rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 41% 50%;
+  gap: 9%;
+  grid-template-rows: auto;
 
-  &__titulo {
-    font-size: 5rem;
-    font-weight: 800;
-    color: $color-negro;
+  &__datos {
     grid-column: 1;
     grid-row: 1;
-  }
+    width: 100%;
+    height: 100%;
 
-  &__formulario {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: min(10%, 6.5rem);
-    margin-right: 11.6rem;
-    display: flex;
-    flex-direction: column;
-
-
-    .label01,
-    .label02,
-    .label03 {
-      margin-bottom: 6px;
-      font-size: 1.3rem;
-      font-weight: 400;
-      color: $color-gris-medio;
-      text-transform: uppercase;
-    }
-
-    .label01 {
-      margin-top: 3.6rem;
-    }
-
-    .label02 {
-      margin-top: 2.9rem;
-    }
-
-    .label03 {
-      margin-top: 2rem;
-    }
-
-    .nombre,
-    .correo {
-      width: min(100%, 52.4rem);
-      height: 5.5rem;
-      padding: 1.8rem;
-      font-size: 1.6rem;
-      font-weight: 400;
+    &--titulo {
+      font-size: 5rem;
+      font-weight: 800;
       color: $color-negro;
-      border: 1px solid $color-gris-medio;
-      border-radius: 4px;
+
+    }
+
+    &--formulario {
+      grid-column: 1;
+      grid-row: 1;
+      width: 100%;
+      height: 80%;
+      margin-top: 5.9rem;
+      //margin-right: 18.1%;
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
+
+
+
+      .label01,
+      .label02,
+      .label03 {
+        margin-bottom: 6px;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $color-gris-medio;
+        text-transform: uppercase;
+      }
+
+      /*.label01 {
+        margin-top: 3.6rem;
+      }*/
+
+      .label02 {
+        margin-top: 2.9rem;
+      }
+
+      .label03 {
+        margin-top: 2rem;
+      }
+
+      .nombre,
+      .correo {
+        //width: min(100%, 52.4rem);
+        //height: min(100%, 5.5rem);
+        padding: 1.8rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-negro;
+        border: 1px solid $color-gris-medio;
+        border-radius: 4px;
+      }
+
+      .mensaje {
+        //width: min(100%, 52.4rem);
+        height: min(100%, 26.9rem);
+        resize: none;
+        padding: 1.8rem;
+        font-family: 'Sora';
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-negro ;
+        border: 1px solid $color-gris-medio;
+        border-radius: 4px;
+      }
+
+      .btn {
+        margin-top: 2rem;
+        align-self: flex-end;
+        width: 20rem;
+        height: 5.5rem;
+        padding: 1.6rem 7.2rem;
+        border: 1px solid $color-negro;
+        border-radius: 4px;
+        font-family: 'Sora', sans-serif;
+        color: $color-blanco;
+        background-color: $color-negro;
+        text-align: center;
+        cursor: pointer;
+      }
+
     }
 
 
+
+
+
+
   }
 
-  .mensaje {
-    width: min(100%, 52.4rem);
-    height: min(100%, 26.9rem);
-    resize: none;
-    padding: 1.8rem;
-    font-family: 'Sora';
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: $color-negro ;
-    border: 1px solid $color-gris-medio;
-    border-radius: 4px;
-  }
-
-  .btn {
-    margin-top: 2rem;
-    align-self: flex-end;
-    width: 20rem;
-    height: 5.5rem;
-    padding: 1.6rem 7.2rem;
-    border: 1px solid $color-negro;
-    border-radius: 4px;
-    font-family: 'Sora', sans-serif;
-    color: $color-blanco;
-    background-color: $color-negro;
-    text-align: center;
-    cursor: pointer;
-  }
 
   &__fotobotas {
     width: 100%;
