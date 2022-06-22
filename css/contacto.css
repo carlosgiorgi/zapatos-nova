@@ -128,10 +128,11 @@ header {
   grid-column: 1;
   grid-row: 1;
   width: 100%;
-  height: 80%;
+  height: 82%;
   margin-top: 5.9rem;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   /*.label01 {
     margin-top: 3.6rem;
   }*/
@@ -153,6 +154,8 @@ header {
 }
 .contacto__datos--formulario .nombre,
 .contacto__datos--formulario .correo {
+  width: min(100%, 52.4rem);
+  height: min(100%, 5.5rem);
   padding: 1.8rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -161,6 +164,7 @@ header {
   border-radius: 4px;
 }
 .contacto__datos--formulario .mensaje {
+  width: min(100%, 52.4rem);
   height: min(100%, 26.9rem);
   resize: none;
   padding: 1.8rem;
@@ -174,8 +178,8 @@ header {
 .contacto__datos--formulario .btn {
   margin-top: 2rem;
   align-self: flex-end;
-  width: 20rem;
-  height: 5.5rem;
+  width: min(100%, 20rem);
+  height: min(100%, 5.5rem);
   padding: 1.6rem 7.2rem;
   border: 1px solid #000;
   border-radius: 4px;

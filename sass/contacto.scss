@@ -30,12 +30,11 @@
       grid-column: 1;
       grid-row: 1;
       width: 100%;
-      height: 80%;
+      height: 82%;
       margin-top: 5.9rem;
-      //margin-right: 18.1%;
       display: flex;
       flex-direction: column;
-      //justify-content: space-between;
+      box-sizing: border-box;
 
 
 
@@ -63,8 +62,8 @@
 
       .nombre,
       .correo {
-        //width: min(100%, 52.4rem);
-        //height: min(100%, 5.5rem);
+        width: min(100%, 52.4rem);
+        height: min(100%, 5.5rem);
         padding: 1.8rem;
         font-size: 1.6rem;
         font-weight: 400;
@@ -74,7 +73,7 @@
       }
 
       .mensaje {
-        //width: min(100%, 52.4rem);
+        width: min(100%, 52.4rem);
         height: min(100%, 26.9rem);
         resize: none;
         padding: 1.8rem;
@@ -89,8 +88,8 @@
       .btn {
         margin-top: 2rem;
         align-self: flex-end;
-        width: 20rem;
-        height: 5.5rem;
+        width: min(100%, 20rem);
+        height: min(100%, 5.5rem);
         padding: 1.6rem 7.2rem;
         border: 1px solid $color-negro;
         border-radius: 4px;
@@ -100,16 +99,8 @@
         text-align: center;
         cursor: pointer;
       }
-
     }
-
-
-
-
-
-
   }
-
 
   &__fotobotas {
     width: 100%;
@@ -117,7 +108,6 @@
     grid-row: 1;
     grid-column: 2;
   }
-
 }
 
 .direcciones {
