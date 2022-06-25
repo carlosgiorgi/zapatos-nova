@@ -72,18 +72,14 @@
       .enviar {
         display: flex;
         align-self: flex-end;
-        //justify-self: flex-end;
         height: 100%;
         padding-top: clamp(1px, 1.6vw, 2rem);
 
         &__btn {
-          //margin-top: clamp(1vw, 1.6vw, 2rem);
-
           //width: 20rem;
           border-style: none;
           //height: 5.5rem;
           padding: 1.6rem 7.2rem;
-          //border: 1px solid $color-negro;
           border-radius: 4px;
           font-family: 'Sora', sans-serif;
           font-size: 1.8rem;
@@ -94,7 +90,7 @@
           transition: all .2s ease-in;
 
           &:hover {
-            @include hover-enlaces;
+            @include hover-boton;
           }
         }
 

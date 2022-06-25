@@ -49,6 +49,10 @@ header {
   color: #fff;
   border-radius: 4px;
 }
+.nav .nav__cta:hover {
+  background-color: #999;
+  color: #000;
+}
 
 .footer {
   margin-top: 12.5rem;
@@ -181,7 +185,7 @@ header {
   transition: all 0.2s ease-in;
 }
 .contacto__datos--formulario .enviar__btn:hover {
-  background-color: #ddd;
+  background-color: #999;
   color: #000;
 }
 .contacto__fotobotas {
