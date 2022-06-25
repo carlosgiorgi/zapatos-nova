@@ -121,6 +121,11 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    transition: all .2s ease-in;
+
+    &:hover {
+      @include hover-enlaces-contacto;
+    }
   }
 
   .icono-direccion {

@@ -1,5 +1,13 @@
 @mixin hover-boton {
   background-color: $color-gris-medio;
   color: $color-negro;
+}
 
+@mixin hover-enlaces-contacto {
+  color: $color-gris-medio;
+}
+
+@mixin hover-redes {
+  transform: translateY(-3px);
+  color: $color-azul;
 }

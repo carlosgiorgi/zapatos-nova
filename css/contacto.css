@@ -42,12 +42,17 @@ header {
   font-size: 1.4rem;
   font-weight: 800;
   color: #000;
+  transition: all 0.2s ease-in;
+}
+.nav__list--link:link:hover, .nav__list--link:visited:hover, .nav__list--link:active:hover {
+  color: #999;
 }
 .nav .nav__cta {
   padding: 1rem 1.4rem;
   background-color: #000;
   color: #fff;
   border-radius: 4px;
+  transition: all 0.2s ease-in;
 }
 .nav .nav__cta:hover {
   background-color: #999;
@@ -207,6 +212,10 @@ header {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: all 0.2s ease-in;
+}
+.direcciones .direccion:hover {
+  color: #999;
 }
 .direcciones .icono-direccion {
   font-size: 2.9rem;
