@@ -67,7 +67,7 @@ header {
 }
 .footer__logocopy--enlace {
   border-right: 1px solid #ddd;
-  padding-right: 2rem;
+  padding-right: clamp(1px, 1.56vw, 2rem);
 }
 .footer__redes {
   grid-column: 2;
@@ -80,11 +80,11 @@ header {
   justify-content: center;
 }
 .footer__redes--enlace {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 .footer__redes--enlace:hover {
   transform: translateY(-3px);
-  color: #999;
+  color: #00f;
 }
 .footer__desarrollo {
   grid-column: 3;

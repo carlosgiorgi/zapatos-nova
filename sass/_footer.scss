@@ -12,10 +12,12 @@
     align-items: center;
     justify-content: left;
     gap: 1.8rem;
+    //gap: clamp(1px, 1.4vw, 1.8rem);
 
     &--enlace {
       border-right: 1px solid $color-gris-claro;
-      padding-right: 2rem;
+      //padding-right: 2rem;
+      padding-right: clamp(1px, 1.56vw, 2rem);
     }
   }
 
@@ -30,11 +32,13 @@
     justify-content: center;
 
     &--enlace {
-      transition: all .3s ease-in;
+      transition: all .2s ease-in;
 
       &:hover {
         transform: translateY(-3px);
-        color: $color-gris-medio;
+        color: $color-azul;
+
+
 
       }
     }
