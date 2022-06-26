@@ -2,10 +2,17 @@
 
 
 //-----HEADER----
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &__logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 //-----NAV----

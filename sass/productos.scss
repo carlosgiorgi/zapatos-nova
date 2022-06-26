@@ -3,6 +3,7 @@
 @import "header";
 @import "footer";
 @import "general";
+@import "mixins";
 
 
 .nuestros-productos__título {
@@ -64,18 +65,11 @@
       margin-left: 2.2rem;
     }
   }
-
-
-
-
-
-
 }
 
 .paginación {
   margin: 9.3rem auto 0 auto;
   width: 27vw;
-
 
   &__lista {
     display: flex;
@@ -85,7 +79,6 @@
     align-items: center;
     justify-content: center;
 
-    //row-gap: 3.4rem;
     &--link {
       font-size: 1.9rem;
       font-weight: 400;
@@ -96,8 +89,4 @@
       cursor: pointer;
     }
   }
-
-
-
-
 }

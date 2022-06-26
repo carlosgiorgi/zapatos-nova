@@ -23,10 +23,23 @@ h2 {
   font-weight: 400;
 }
 
-header {
+/*Media Query Control*/
+/*
+1200px+: desktop and big desktop
+900px---1200px:tablet landscape
+600px---900px:tablet portrait
+<600px:phones--->414px
+*/
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header__logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .nav__list {
@@ -60,6 +73,13 @@ header {
   color: #000;
 }
 
+/*Media Query Control*/
+/*
+1200px+: desktop and big desktop
+900px---1200px:tablet landscape
+600px---900px:tablet portrait
+<600px:phones--->414px
+*/
 .footer {
   margin-top: 12.5rem;
   margin-bottom: 5rem;
@@ -115,6 +135,13 @@ header {
   color: #000;
 }
 
+/*Media Query Control*/
+/*
+1200px+: desktop and big desktop
+900px---1200px:tablet landscape
+600px---900px:tablet portrait
+<600px:phones--->414px
+*/
 .nuestros-productos__título {
   margin-top: 6rem;
   font-size: 5rem;
