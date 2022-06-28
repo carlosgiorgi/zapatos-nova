@@ -1,4 +1,4 @@
-Práctica HTML, SCSS(Sass) - Zapatos Nova (Onlines&Co)
+Práctica HTML, CSS, SCSS(Sass) - Zapatos Nova (Onlines&Co)
 Prácticas 1 y 2 (Landing Page + Productos + Contactos)
-Versión desktop
+Versión desktop + mobile.
 ---------------------------------------------------
