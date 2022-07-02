@@ -1,4 +1,5 @@
-@import 'variables';
+@import "variables";
+@import "mixins";
 
 * {
   margin: 0;
@@ -13,7 +14,16 @@ html {
   font-size: 62.5%;
   font-family: 'Sora', sans-serif;
   scroll-behavior: smooth;
+
+  /*@include responsive(breakpoint) {
+    font-size: 56.25%;
+  }*/
+
+
 }
+
+
+
 
 body {
   background-color: $color-blanco;

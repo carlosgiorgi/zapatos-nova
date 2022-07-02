@@ -12,7 +12,21 @@ $max-width: 128rem;
 //--fonts--
 $default-font-size: 1.6rem;
 
+//--responsive
 
-//--responsive--
+//MEDIA QUERY MANAGER
+//900px --- 1800px edición normal
+//600px --- 900px tablets
+//0px --- 600px phones
+// 414px es la que pide para iPhone XR
 
-$desktop1: 90rem;
+$tablets: 90rem;
+$phones: 60rem;
+
+
+
+
+//--responsive--Break Points (bp)
+
+$bp-phone414px: 26em;
+/*414px/16px = 25.875 aprox 26*/

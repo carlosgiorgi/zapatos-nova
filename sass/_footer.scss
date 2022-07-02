@@ -15,9 +15,20 @@
     justify-content: left;
     gap: 1.8rem;
 
+    /* @include responsive(breakpoint) {
+      gap: 0.9rem;
+
+    }*/
+
     &--enlace {
       border-right: 1px solid $color-gris-claro;
       padding-right: clamp(1px, 1.56vw, 2rem);
+      padding-right: 2rem;
+
+      /* @include responsive(breakpoint) {
+        padding-right: 1rem;
+
+      }*/
     }
   }
 

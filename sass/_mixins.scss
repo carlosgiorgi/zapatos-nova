@@ -12,9 +12,6 @@
   color: $color-azul;
 }
 
-
-
-
 /*Media Query Control*/
 /*
 1200px+: desktop and big desktop
@@ -22,3 +19,9 @@
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
+/*@mixin responsive ($breakpoint) {
+  @media (max-width: 850px) {
+    @content
+  }
+
+}*/

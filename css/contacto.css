@@ -1,3 +1,18 @@
+/*414px/16px = 25.875 aprox 26*/
+/*414px/16px = 25.875 aprox 26*/
+/*Media Query Control*/
+/*
+1200px+: desktop and big desktop
+900px---1200px:tablet landscape
+600px---900px:tablet portrait
+<600px:phones--->414px
+*/
+/*@mixin responsive ($breakpoint) {
+  @media (max-width: 850px) {
+    @content
+  }
+
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +25,9 @@ html {
   font-size: 62.5%;
   font-family: "Sora", sans-serif;
   scroll-behavior: smooth;
+  /*@include responsive(breakpoint) {
+    font-size: 56.25%;
+  }*/
 }
 
 body {
@@ -29,6 +47,12 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
+/*@mixin responsive ($breakpoint) {
+  @media (max-width: 850px) {
+    @content
+  }
+
+}*/
 .header {
   display: flex;
   align-items: center;
@@ -79,6 +103,12 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
+/*@mixin responsive ($breakpoint) {
+  @media (max-width: 850px) {
+    @content
+  }
+
+}*/
 .footer {
   margin-top: 12.5rem;
   margin-bottom: 5rem;
@@ -93,10 +123,19 @@ h2 {
   align-items: center;
   justify-content: left;
   gap: 1.8rem;
+  /* @include responsive(breakpoint) {
+    gap: 0.9rem;
+
+  }*/
 }
 .footer__logocopy--enlace {
   border-right: 1px solid #ddd;
   padding-right: clamp(1px, 1.56vw, 2rem);
+  padding-right: 2rem;
+  /* @include responsive(breakpoint) {
+    padding-right: 1rem;
+
+  }*/
 }
 .footer__redes {
   grid-column: 2;
@@ -125,6 +164,7 @@ h2 {
   font-weight: 400;
 }
 
+/*414px/16px = 25.875 aprox 26*/
 .contenedor {
   max-width: 128rem;
   margin: 5rem auto;
@@ -141,6 +181,12 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
+/*@mixin responsive ($breakpoint) {
+  @media (max-width: 850px) {
+    @content
+  }
+
+}*/
 .contacto {
   margin-top: 6rem;
   display: grid;

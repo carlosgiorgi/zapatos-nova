@@ -3,6 +3,7 @@
 @import "header";
 @import "footer";
 @import "general";
+@import "mixins";
 
 
 
@@ -57,6 +58,8 @@
       font-size: 3rem;
       font-weight: 400;
       line-height: 3.8rem;
+
+
     }
 
     &--text {
