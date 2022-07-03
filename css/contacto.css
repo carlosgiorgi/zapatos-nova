@@ -7,7 +7,8 @@
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*@mixin responsive ($breakpoint) {
+/*
+@mixin responsive ($breakpoint) {
   @media (max-width: 850px) {
     @content
   }
@@ -47,7 +48,8 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*@mixin responsive ($breakpoint) {
+/*
+@mixin responsive ($breakpoint) {
   @media (max-width: 850px) {
     @content
   }
@@ -103,7 +105,8 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*@mixin responsive ($breakpoint) {
+/*
+@mixin responsive ($breakpoint) {
   @media (max-width: 850px) {
     @content
   }
@@ -123,7 +126,7 @@ h2 {
   align-items: center;
   justify-content: left;
   gap: 1.8rem;
-  /* @include responsive(breakpoint) {
+  /*@include responsive(breakpoint) {
     gap: 0.9rem;
 
   }*/
@@ -132,7 +135,7 @@ h2 {
   border-right: 1px solid #ddd;
   padding-right: clamp(1px, 1.56vw, 2rem);
   padding-right: 2rem;
-  /* @include responsive(breakpoint) {
+  /*@include responsive(breakpoint) {
     padding-right: 1rem;
 
   }*/
@@ -181,7 +184,8 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*@mixin responsive ($breakpoint) {
+/*
+@mixin responsive ($breakpoint) {
   @media (max-width: 850px) {
     @content
   }
