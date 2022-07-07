@@ -7,13 +7,6 @@
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*
-@mixin responsive ($breakpoint) {
-  @media (max-width: 850px) {
-    @content
-  }
-
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -26,13 +19,11 @@ html {
   font-size: 62.5%;
   font-family: "Sora", sans-serif;
   scroll-behavior: smooth;
-  /*@include responsive(breakpoint) {
-    font-size: 56.25%;
-  }*/
 }
 
 body {
   background-color: #fff;
+  z-index: 0;
 }
 
 h4,
@@ -48,17 +39,16 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*
-@mixin responsive ($breakpoint) {
-  @media (max-width: 850px) {
-    @content
-  }
-
-}*/
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 850px) {
+  .header {
+    margin-left: 3.6rem;
+    margin-right: 3.6rem;
+  }
 }
 .header__logo {
   width: 100%;
@@ -66,8 +56,27 @@ h2 {
   display: flex;
   align-items: center;
 }
-
-.nav__list {
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav__mobile {
+  font-size: 3.2rem;
+  display: none;
+  transition: all 0.5s;
+}
+.header .nav__mobile:hover {
+  transform: rotate(180deg);
+  color: #999;
+}
+@media (max-width: 850px) {
+  .header .nav__mobile {
+    display: flex;
+    align-items: center;
+    z-index: 50;
+  }
+}
+.header .nav__list {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -75,7 +84,12 @@ h2 {
   list-style: none;
   gap: 3.7rem;
 }
-.nav__list--link:link, .nav__list--link:visited, .nav__list--link:active {
+@media (max-width: 850px) {
+  .header .nav__list {
+    display: none;
+  }
+}
+.header .nav__list--link:link, .header .nav__list--link:visited, .header .nav__list--link:active {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -83,17 +97,17 @@ h2 {
   color: #000;
   transition: all 0.2s ease-in;
 }
-.nav__list--link:link:hover, .nav__list--link:visited:hover, .nav__list--link:active:hover {
+.header .nav__list--link:link:hover, .header .nav__list--link:visited:hover, .header .nav__list--link:active:hover {
   color: #999;
 }
-.nav .nav__cta {
+.header .nav__list .nav__cta {
   padding: 1rem 1.4rem;
   background-color: #000;
   color: #fff;
   border-radius: 4px;
   transition: all 0.2s ease-in;
 }
-.nav .nav__cta:hover {
+.header .nav__list .nav__cta:hover {
   background-color: #999;
   color: #000;
 }
@@ -105,13 +119,6 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*
-@mixin responsive ($breakpoint) {
-  @media (max-width: 850px) {
-    @content
-  }
-
-}*/
 .footer {
   margin-top: 12.5rem;
   margin-bottom: 5rem;
@@ -171,6 +178,7 @@ h2 {
 .contenedor {
   max-width: 128rem;
   margin: 5rem auto;
+  position: relative;
 }
 
 .fa-black {
@@ -184,13 +192,6 @@ h2 {
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*
-@mixin responsive ($breakpoint) {
-  @media (max-width: 850px) {
-    @content
-  }
-
-}*/
 .contacto {
   margin-top: 6rem;
   display: grid;
@@ -198,6 +199,11 @@ h2 {
   grid-template-columns: 41% 50%;
   gap: 9%;
   grid-template-rows: auto;
+}
+@media (max-width: 850px) {
+  .contacto {
+    margin-top: 2.6rem;
+  }
 }
 .contacto__datos {
   grid-column: 1;

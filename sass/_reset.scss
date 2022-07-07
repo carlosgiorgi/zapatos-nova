@@ -15,18 +15,11 @@ html {
   font-family: 'Sora', sans-serif;
   scroll-behavior: smooth;
 
-  /*@include responsive(breakpoint) {
-    font-size: 56.25%;
-  }*/
-
-
 }
-
-
-
 
 body {
   background-color: $color-blanco;
+  z-index: 0;
 }
 
 h4,

@@ -4,6 +4,8 @@
 @import "footer";
 @import "general";
 @import "mixins";
+@import "menu";
+
 
 
 
@@ -12,6 +14,10 @@
   width: 100%;
   margin-top: 6rem;
   position: relative;
+
+  @include responsive {
+    margin-top: 2.6rem;
+  }
 
   &__img {
     max-width: 100%;
@@ -24,14 +30,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.66);
-    padding: 2rem 2.6rem;
+    padding: clamp(0.7rem, 1.56vw, 2rem) clamp(1rem, 2.06vw, 2.6rem);
     display: flex;
     align-items: center;
     justify-content: center;
 
     &--title {
       text-transform: uppercase;
-      font-size: clamp(3rem, 5.5vw, 7.2rem);
+      font-size: clamp(2.4rem, 5.5vw, 7.2rem);
       font-weight: 300;
       color: $color-blanco;
       letter-spacing: -1.8px;

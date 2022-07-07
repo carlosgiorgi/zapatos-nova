@@ -3,6 +3,9 @@
 .contenedor {
   max-width: $max-width;
   margin: 5rem auto;
+
+  position: relative;
+  //z-index: 0;
 }
 
 .fa-black {

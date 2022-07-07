@@ -1,4 +1,5 @@
 @import "mixins";
+//@import "menu";
 
 
 //-----HEADER----
@@ -7,56 +8,86 @@
   align-items: center;
   justify-content: space-between;
 
+  @include responsive {
+    margin-left: 3.6rem;
+    margin-right: 3.6rem;
+  }
+
   &__logo {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
   }
-}
 
-//-----NAV----
-.nav {
-  &__list {
+  //-----NAV----
+
+
+  .nav {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: left;
-    list-style: none;
-    gap: 3.7rem;
+    justify-content: space-between;
 
-    &--link:link,
-    &--link:visited,
-    &--link:active {
-      //display: inline-block;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: $color-negro;
-      transition: all .2s ease-in;
+    &__mobile {
+      font-size: 3.2rem;
+      display: none;
+      transition: all 0.5s;
 
       &:hover {
-        @include hover-enlaces-contacto;
+        transform: rotate(180deg);
+        color: $color-gris-medio;
+      }
+
+      @include responsive {
+        display: flex;
+        align-items: center;
+        z-index: 50;
+
+
+      }
+
+    }
+
+
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: left;
+      list-style: none;
+      gap: 3.7rem;
+
+      @include responsive {
+        display: none;
+      }
+
+      &--link:link,
+      &--link:visited,
+      &--link:active {
+        //display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: $color-negro;
+        transition: all .2s ease-in;
+
+        &:hover {
+          @include hover-enlaces-contacto;
+        }
+      }
+
+      .nav__cta {
+        padding: 1rem 1.4rem;
+        background-color: $color-negro;
+        color: $color-blanco;
+        border-radius: 4px;
+        transition: all .2s ease-in;
+
+        &:hover {
+          @include hover-boton;
+        }
       }
     }
   }
-
-  .nav__cta {
-    padding: 1rem 1.4rem;
-    background-color: $color-negro;
-    color: $color-blanco;
-    border-radius: 4px;
-    transition: all .2s ease-in;
-
-    &:hover {
-      @include hover-boton;
-    }
-
-
-  }
-
-
-
-
 }

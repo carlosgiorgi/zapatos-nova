@@ -19,10 +19,10 @@
 600px---900px:tablet portrait
 <600px:phones--->414px
 */
-/*
-@mixin responsive ($breakpoint) {
+
+@mixin responsive {
   @media (max-width: 850px) {
     @content
   }
 
-}*/
+}
