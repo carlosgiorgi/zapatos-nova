@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*414px/16px = 25.875 aprox 26*/
-/*414px/16px = 25.875 aprox 26*/
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +97,6 @@ h2 {
   color: #000;
 }
 
-/*414px/16px = 25.875 aprox 26*/
 .footer {
   margin-top: 12.5rem;
   margin-bottom: 5rem;
@@ -191,7 +188,6 @@ h2 {
   }
 }
 
-/*414px/16px = 25.875 aprox 26*/
 .contenedor {
   max-width: 128rem;
   margin: 5rem auto;
@@ -275,7 +271,6 @@ h2 {
   color: #000;
 }
 
-/*414px/16px = 25.875 aprox 26*/
 .footer {
   margin-top: 12.5rem;
   margin-bottom: 5rem;
@@ -367,7 +362,6 @@ h2 {
   }
 }
 
-/*414px/16px = 25.875 aprox 26*/
 .menu {
   position: fixed;
   top: 0;
