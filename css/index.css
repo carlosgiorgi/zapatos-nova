@@ -1,12 +1,5 @@
 /*414px/16px = 25.875 aprox 26*/
 /*414px/16px = 25.875 aprox 26*/
-/*Media Query Control*/
-/*
-1200px+: desktop and big desktop
-900px---1200px:tablet landscape
-600px---900px:tablet portrait
-<600px:phones--->414px
-*/
 * {
   margin: 0;
   padding: 0;
@@ -32,13 +25,6 @@ h2 {
   font-weight: 400;
 }
 
-/*Media Query Control*/
-/*
-1200px+: desktop and big desktop
-900px---1200px:tablet landscape
-600px---900px:tablet portrait
-<600px:phones--->414px
-*/
 .header {
   display: flex;
   align-items: center;
@@ -112,13 +98,6 @@ h2 {
   color: #000;
 }
 
-/*Media Query Control*/
-/*
-1200px+: desktop and big desktop
-900px---1200px:tablet landscape
-600px---900px:tablet portrait
-<600px:phones--->414px
-*/
 /*414px/16px = 25.875 aprox 26*/
 .footer {
   margin-top: 12.5rem;
@@ -222,20 +201,6 @@ h2 {
   color: #000;
 }
 
-/*Media Query Control*/
-/*
-1200px+: desktop and big desktop
-900px---1200px:tablet landscape
-600px---900px:tablet portrait
-<600px:phones--->414px
-*/
-/*Media Query Control*/
-/*
-1200px+: desktop and big desktop
-900px---1200px:tablet landscape
-600px---900px:tablet portrait
-<600px:phones--->414px
-*/
 .header {
   display: flex;
   align-items: center;
@@ -309,13 +274,6 @@ h2 {
   color: #000;
 }
 
-/*Media Query Control*/
-/*
-1200px+: desktop and big desktop
-900px---1200px:tablet landscape
-600px---900px:tablet portrait
-<600px:phones--->414px
-*/
 /*414px/16px = 25.875 aprox 26*/
 .footer {
   margin-top: 12.5rem;
@@ -408,13 +366,6 @@ h2 {
   }
 }
 
-/*Media Query Control*/
-/*
-1200px+: desktop and big desktop
-900px---1200px:tablet landscape
-600px---900px:tablet portrait
-<600px:phones--->414px
-*/
 /*414px/16px = 25.875 aprox 26*/
 .menu {
   position: fixed;
