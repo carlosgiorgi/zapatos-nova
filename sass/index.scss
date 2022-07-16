@@ -30,14 +30,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.66);
-    padding: clamp(0.7rem, 1.56vw, 2rem) clamp(1rem, 2.06vw, 2.6rem);
+    padding: clamp(0.7rem, 1.56vw, 2rem) clamp(1px, 1.5vw, 2.6rem);
     display: flex;
     align-items: center;
     justify-content: center;
 
     &--title {
       text-transform: uppercase;
-      font-size: clamp(2.4rem, 5.5vw, 7.2rem);
+      font-size: clamp(2rem, 5.5vw, 7.2rem);
       font-weight: 300;
       color: $color-blanco;
       letter-spacing: -1.8px;

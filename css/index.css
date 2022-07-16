@@ -416,7 +416,7 @@ h2 {
   grid-template-rows: repeat(4, auto);
   font-size: 1.2rem;
   color: #fff;
-  margin: 57rem auto 5.7rem auto;
+  margin: 50rem auto 5.7rem auto;
 }
 .menu .menufooter__logocopy {
   grid-row: 1;
@@ -470,14 +470,14 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.66);
-  padding: clamp(0.7rem, 1.56vw, 2rem) clamp(1rem, 2.06vw, 2.6rem);
+  padding: clamp(0.7rem, 1.56vw, 2rem) clamp(1px, 1.5vw, 2.6rem);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .hero__fondo-title--title {
   text-transform: uppercase;
-  font-size: clamp(2.4rem, 5.5vw, 7.2rem);
+  font-size: clamp(2rem, 5.5vw, 7.2rem);
   font-weight: 300;
   color: #fff;
   letter-spacing: -1.8px;
