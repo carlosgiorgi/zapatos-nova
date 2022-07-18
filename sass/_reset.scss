@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixins";
-
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +15,7 @@ html {
 }
 
 body {
-  background-color: $color-blanco;
+  background-color: white;
   z-index: 0;
 }
 
