@@ -8,8 +8,6 @@
   color: $color-blanco;
 }
 
-
-
 .menu {
   position: fixed;
   top: 0;
@@ -76,18 +74,18 @@
     }
 
     &__copyright {
-      display: flex;
       grid-column: 1;
       grid-row: 2;
+      display: flex;
       justify-content: center;
       font-size: 1.2rem;
       margin-top: 1.3rem;
     }
 
     &__redes {
-      display: flex;
       grid-column: 1;
       grid-row: 3;
+      display: flex;
       justify-content: center;
       gap: 1.6rem;
       margin-top: 3.8rem;
