@@ -6,8 +6,11 @@ $color-gris-oscuro: #222;
 $color-negro: #000;
 $color-azul: #00f;
 
+//--fonts--
+$default-font-size: 1.6rem;
+
 //--width--
 $max-width: 128rem;
 
-//--fonts--
-$default-font-size: 1.6rem;
+//--responsive--
+$mobile: 850px;

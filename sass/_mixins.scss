@@ -1,3 +1,5 @@
+@import "variables";
+
 @mixin hover-boton {
   background-color: $color-gris-medio;
   color: $color-negro;
@@ -15,8 +17,52 @@
 
 
 @mixin responsive {
-  @media (max-width: 850px) {
-    @content
+  @media (max-width: #{$mobile}) {
+    @content;
   }
 
+}
+
+@mixin masinfo {
+  display: none;
+
+  @include responsive {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+
+  }
+
+  &__texto {
+    display: none;
+    color: $color-gris-medio;
+
+
+    @include responsive {
+      display: flex;
+    }
+
+    &--flecha {
+      display: none;
+
+      @include responsive {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@mixin título-item {
+  font-size: clamp(2rem, 3.1vw, 3.8rem);
+  font-weight: 800;
+  margin-top: clamp(1px, 11.5vw, 14.7rem);
+}
+
+@mixin descrip-item {
+  margin-top: clamp(1px, 1.2vw, 1.5rem);
+  font-size: 1.6rem;
+  line-height: clamp(1.5rem, 2.1vw, 2.4rem);
 }

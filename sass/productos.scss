@@ -54,7 +54,6 @@
         grid-column: 1;
         grid-row: 2;
       }
-
     }
 
     .foto02 {
@@ -93,9 +92,7 @@
     .título-item--01 {
       grid-column: 2;
       grid-row: 1;
-      font-size: clamp(2rem, 3.1vw, 3.8rem);
-      font-weight: 800;
-      margin-top: clamp(1px, 11.5vw, 14.7rem);
+      @include título-item;
       margin-left: 3.8rem;
 
       @include responsive {
@@ -112,7 +109,6 @@
       grid-row: 1;
       margin-top: clamp(19px, 17.2vw, 22rem);
       margin-left: 3.8rem;
-      font-size: 1.6rem;
 
       @include responsive {
         grid-column: 1;
@@ -131,9 +127,7 @@
       }
 
       .descripción-item {
-        margin-top: clamp(1px, 1.2vw, 1.5rem);
-        font-size: 1.6rem;
-        line-height: clamp(1.5rem, 2.1vw, 2.4rem);
+        @include descrip-item;
 
         @include responsive {
           line-height: 2.4rem;
@@ -147,44 +141,14 @@
       }
 
       .masinfo {
-        display: none;
-
-        @include responsive {
-          display: flex;
-          align-items: center;
-          font-size: 1.4rem;
-          margin-top: 2rem;
-          margin-bottom: 6rem;
-
-        }
-
-        &__texto {
-          display: none;
-          color: $color-gris-medio;
-
-
-          @include responsive {
-            display: flex;
-          }
-
-          &--flecha {
-            display: none;
-
-            @include responsive {
-              display: flex;
-              align-items: center;
-            }
-          }
-        }
+        @include masinfo;
       }
     }
 
     .título-item--02 {
       grid-column: 1;
       grid-row: 2;
-      font-size: clamp(2rem, 3.1vw, 3.8rem);
-      font-weight: 800;
-      margin-top: clamp(1px, 11.5vw, 14.7rem);
+      @include título-item;
 
       @include responsive {
         grid-column: 1;
@@ -200,7 +164,6 @@
       grid-row: 2;
       margin-top: clamp(19px, 17.2vw, 22rem);
       margin-right: 5.4rem;
-      font-size: 1.6rem;
 
       @include responsive {
         grid-column: 1;
@@ -219,9 +182,7 @@
       }
 
       .descripción-item {
-        margin-top: clamp(1px, 1.2vw, 1.5rem);
-        font-size: 1.6rem;
-        line-height: clamp(1.5rem, 2.1vw, 2.4rem);
+        @include descrip-item;
 
         @include responsive {
           line-height: 2.4rem;
@@ -235,44 +196,14 @@
       }
 
       .masinfo {
-        display: none;
-
-        @include responsive {
-          display: flex;
-          align-items: center;
-          font-size: 1.4rem;
-          margin-top: 2rem;
-          margin-bottom: 6rem;
-
-        }
-
-        &__texto {
-          display: none;
-          color: $color-gris-medio;
-
-
-          @include responsive {
-            display: flex;
-          }
-
-          &--flecha {
-            display: none;
-
-            @include responsive {
-              display: flex;
-              align-items: center;
-            }
-          }
-        }
+        @include masinfo;
       }
     }
 
     .título-item--03 {
       grid-column: 2;
       grid-row: 3;
-      font-size: clamp(2rem, 3.1vw, 3.8rem);
-      font-weight: 800;
-      margin-top: clamp(1px, 11.5vw, 14.7rem);
+      @include título-item;
       margin-left: 3.8rem;
 
       @include responsive {
@@ -289,7 +220,6 @@
       grid-row: 3;
       margin-top: clamp(19px, 17.2vw, 22rem);
       margin-left: 3.8rem;
-      font-size: 1.6rem;
 
       @include responsive {
         grid-column: 1;
@@ -308,9 +238,7 @@
       }
 
       .descripción-item {
-        margin-top: clamp(1px, 1.2vw, 1.5rem);
-        font-size: 1.6rem;
-        line-height: clamp(1.5rem, 2.1vw, 2.4rem);
+        @include descrip-item;
 
         @include responsive {
           line-height: 2.4rem;
@@ -324,45 +252,14 @@
       }
 
       .masinfo {
-        display: none;
-
-        @include responsive {
-          display: flex;
-          align-items: center;
-          font-size: 1.4rem;
-          margin-top: 2rem;
-          margin-bottom: 6rem;
-
-        }
-
-        &__texto {
-          display: none;
-          color: $color-gris-medio;
-
-
-          @include responsive {
-            display: flex;
-          }
-
-          &--flecha {
-            display: none;
-
-            @include responsive {
-              display: flex;
-              align-items: center;
-            }
-          }
-        }
+        @include masinfo;
       }
     }
 
     .título-item--04 {
       grid-column: 1;
       grid-row: 4;
-      font-size: clamp(2rem, 3.1vw, 3.8rem);
-      font-weight: 800;
-      margin-top: clamp(1px, 11.5vw, 14.7rem);
-      //margin-left: 3.8rem;
+      @include título-item;
 
       @include responsive {
         grid-column: 1;
@@ -378,7 +275,6 @@
       grid-row: 4;
       margin-top: clamp(19px, 17.2vw, 22rem);
       margin-right: 5.4rem;
-      font-size: 1.6rem;
 
       @include responsive {
         grid-column: 1;
@@ -397,9 +293,7 @@
       }
 
       .descripción-item {
-        margin-top: clamp(1px, 1.2vw, 1.5rem);
-        font-size: 1.6rem;
-        line-height: clamp(1.5rem, 2.1vw, 2.4rem);
+        @include descrip-item;
 
         @include responsive {
           line-height: 2.4rem;
@@ -413,43 +307,13 @@
       }
 
       .masinfo {
-        display: none;
-
-        @include responsive {
-          display: flex;
-          align-items: center;
-          font-size: 1.4rem;
-          margin-top: 2rem;
-          margin-bottom: 6rem;
-
-        }
-
-        &__texto {
-          display: none;
-          color: $color-gris-medio;
-
-
-          @include responsive {
-            display: flex;
-          }
-
-          &--flecha {
-            display: none;
-
-            @include responsive {
-              display: flex;
-              align-items: center;
-            }
-          }
-        }
+        @include masinfo;
       }
     }
   }
 }
 
-
-
-
+//---PAGINACION-----
 .paginación {
   margin: 9.3rem auto 0 auto;
   width: 31%;

@@ -25,10 +25,10 @@
   .nav__mobilex {
     z-index: 40;
     font-size: 3.3rem;
-    color: white;
+    color: $color-blanco;
     position: fixed;
-    top: 5.8rem;
-    right: 4.2rem;
+    top: 5rem;
+    right: 4rem;
     transition: all 0.5s;
 
     &:hover {

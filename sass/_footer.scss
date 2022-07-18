@@ -6,8 +6,8 @@
   margin-bottom: 5rem;
   width: 100%;
   display: grid;
+  grid-template-rows: 1fr;
   grid-template-columns: min-content max-content repeat(2, auto);
-  // grid-template-columns: min-content minmax(auto, 1fr) 1fr minmax(auto, 1fr);
   align-items: center;
 
   @include responsive {

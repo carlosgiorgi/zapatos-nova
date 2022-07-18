@@ -102,6 +102,7 @@ h2 {
   margin-bottom: 5rem;
   width: 100%;
   display: grid;
+  grid-template-rows: 1fr;
   grid-template-columns: -webkit-min-content -webkit-max-content repeat(2, auto);
   grid-template-columns: min-content max-content repeat(2, auto);
   align-items: center;
@@ -276,6 +277,7 @@ h2 {
   margin-bottom: 5rem;
   width: 100%;
   display: grid;
+  grid-template-rows: 1fr;
   grid-template-columns: -webkit-min-content -webkit-max-content repeat(2, auto);
   grid-template-columns: min-content max-content repeat(2, auto);
   align-items: center;
@@ -381,10 +383,10 @@ h2 {
 .menu .nav__mobilex {
   z-index: 40;
   font-size: 3.3rem;
-  color: white;
+  color: #fff;
   position: fixed;
-  top: 5.8rem;
-  right: 4.2rem;
+  top: 5rem;
+  right: 4rem;
   transition: all 0.5s;
 }
 .menu .nav__mobilex:hover {
@@ -558,7 +560,6 @@ h2 {
   grid-row: 1;
   margin-top: clamp(19px, 17.2vw, 22rem);
   margin-left: 3.8rem;
-  font-size: 1.6rem;
 }
 @media (max-width: 850px) {
   .nuestros-productos .lista .texto-item--01 {
@@ -643,7 +644,6 @@ h2 {
   grid-row: 2;
   margin-top: clamp(19px, 17.2vw, 22rem);
   margin-right: 5.4rem;
-  font-size: 1.6rem;
 }
 @media (max-width: 850px) {
   .nuestros-productos .lista .texto-item--02 {
@@ -729,7 +729,6 @@ h2 {
   grid-row: 3;
   margin-top: clamp(19px, 17.2vw, 22rem);
   margin-left: 3.8rem;
-  font-size: 1.6rem;
 }
 @media (max-width: 850px) {
   .nuestros-productos .lista .texto-item--03 {
@@ -814,7 +813,6 @@ h2 {
   grid-row: 4;
   margin-top: clamp(19px, 17.2vw, 22rem);
   margin-right: 5.4rem;
-  font-size: 1.6rem;
 }
 @media (max-width: 850px) {
   .nuestros-productos .lista .texto-item--04 {

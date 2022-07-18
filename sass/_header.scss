@@ -1,5 +1,4 @@
 @import "mixins";
-//@import "menu";
 
 
 //-----HEADER----
@@ -59,7 +58,6 @@
       &--link:link,
       &--link:visited,
       &--link:active {
-        //display: inline-block;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1.4rem;
